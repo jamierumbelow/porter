@@ -1,6 +1,6 @@
 # Porter
 
-Porter is a lightweight, framework-agnostic authorization solution for PHP applications, loosely based on [CanCan](https://github.com/ryanb/cancan). It requires PHP5.3, but other than that makes no assumptions about your framework or database structure.
+Porter is a lightweight, framework-agnostic authorisation solution for PHP applications, loosely based on [CanCan](https://github.com/ryanb/cancan). It requires PHP5.3, but other than that makes no assumptions about your framework or database structure.
 
 ## Quickstart (Laravel)
 
