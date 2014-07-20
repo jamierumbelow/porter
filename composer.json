@@ -1,5 +1,6 @@
 {
     "name": "jamierumbelow/porter",
+    
     "autoload": {
         "psr-4": {
             "JR\\Porter\\": "src/"
