@@ -53,7 +53,7 @@ trait User
         }
 
         // We've not managed to find this specific action. Maybe we need to check for 'manage'?
-        elseif ( isset($this->_abilities[$class]) && ( $action == 'edit' || $action == 'create' ) && ( isset($this->_abilities[$class]['manage']) ) )
+        elseif ( isset($this->_abilities[$class]) && ( $action == 'read' || $action == 'create' || $action == 'update' || $action == 'destroy' ) && ( isset($this->_abilities[$class]['manage']) ) )
         {
             if (is_callable($this->_abilities[$class]['manage']))
                 $result = call_user_func_array($this->_abilities[$class]['manage'], array( $thing ));
