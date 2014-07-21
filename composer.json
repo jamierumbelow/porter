@@ -1,9 +1,14 @@
 {
     "name": "jamierumbelow/porter",
-    
+
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    },
+
     "autoload": {
         "psr-4": {
-            "JR\\Porter\\": "src/"
+            "JR\\Porter\\": "src/",
+            "JR\\Porter\\Tests\\": "tests/"
         }
     }
 }
