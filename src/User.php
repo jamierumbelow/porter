@@ -19,7 +19,7 @@ trait User
     {
         $this->may($action, $thing, function($instance) use ($what, $compareValue)
         {
-            return ($instance->$what == $compareValue);
+            return is_object($instance) && isset($instance->$what) && ($instance->$what == $compareValue);
         });
     }
 
